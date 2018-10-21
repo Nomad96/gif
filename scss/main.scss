@@ -30,7 +30,7 @@ a {
   }
 }
 
-html{
+html {
   //scroll-behavior: smooth;
 }
 
@@ -187,7 +187,7 @@ nav {
     position: absolute;
     content: '';
     z-index: 3;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     //background-image: linear-gradient(to left, #13abdb, #B10DC9, orange, #28d6e4, #04f44f);
   }
 }
@@ -223,9 +223,11 @@ nav {
     margin-bottom: 80px;
   }
 }
-#team{
+
+#team {
   padding-bottom: 0;
 }
+
 .team {
   background-color: $white;
   .boxes {
@@ -362,9 +364,11 @@ nav {
     }
   }
 }
-#service{
+
+#service {
   padding-top: 200px;
 }
+
 .our_service {
   background-color: rgba(200, 164, 168, 0.05);
   .border_service {
@@ -442,14 +446,14 @@ nav {
   }
 }
 
-.works{
-  .work_grid{
+.works {
+  .work_grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 400px);
     grid-column-gap: 2px;
     grid-row-gap: 2px;
-    img{
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -459,11 +463,11 @@ nav {
       -o-transition: 2s all ease-in-out;
       transition: 2s all ease-in-out;
     }
-    &>div{
+    & > div {
       overflow: hidden;
       border: 1px solid $pink;
-      &:hover{
-        img{
+      &:hover {
+        img {
           -webkit-transform: scale(1.15);
           -moz-transform: scale(1.15);
           -ms-transform: scale(1.15);
@@ -472,38 +476,38 @@ nav {
         }
       }
     }
-    .work_1{
+    .work_1 {
       grid-column-start: 1;
       grid-column-end: 2;
-      grid-row-start:1 ;
-      grid-row-end:2 ;
+      grid-row-start: 1;
+      grid-row-end: 2;
 
     }
-    .work_2{
+    .work_2 {
       grid-column-start: 2;
       grid-column-end: 4;
-      grid-row-start:1 ;
-      grid-row-end:3 ;
+      grid-row-start: 1;
+      grid-row-end: 3;
 
     }
-    .work_3{
+    .work_3 {
       grid-column-start: 4;
       grid-column-end: 5;
-      grid-row-start:1 ;
-      grid-row-end:2 ;
+      grid-row-start: 1;
+      grid-row-end: 2;
     }
-    .work_4{
+    .work_4 {
       grid-column-start: 1;
       grid-column-end: 2;
-      grid-row-start:2 ;
-      grid-row-end:3 ;
+      grid-row-start: 2;
+      grid-row-end: 3;
 
     }
-    .work_5{
+    .work_5 {
       grid-column-start: 4;
       grid-column-end: 5;
-      grid-row-start:2 ;
-      grid-row-end:3 ;
+      grid-row-start: 2;
+      grid-row-end: 3;
     }
   }
 }
