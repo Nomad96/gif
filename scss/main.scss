@@ -512,6 +512,50 @@ nav {
   }
 }
 
+
+.about.section{
+  h2{
+    display: inline-block;
+  }
+  .about_img{
+    position: relative;
+    img{
+      position: absolute;
+      -webkit-box-shadow: 0px 0  6px rgba(0, 0, 0, 0.46);
+      -moz-box-shadow: 0px 0  6px rgba(0, 0, 0, 0.46);
+      box-shadow: 0px 0  6px rgba(0, 0, 0, 0.46);
+      &:first-of-type{
+        top: 150px;
+        right: 90px;
+      }
+      &:last-of-type{
+        top: 0;
+        right: 30px;
+      }
+    }
+  }
+  p.about_text{
+    font-size: 14px;
+    font-weight: bold;
+    color: $lightGrey;
+    line-height: 26px;
+  }
+  .work_time,
+  .address{
+    p{
+      line-height: 28px;
+      font-size: 14px;
+      &:first-of-type{
+        padding-left: 40px;
+      }
+      i{
+        color: $pink;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
 /* animation */
 @keyframes scale {
   0%, 100% {

@@ -22,7 +22,7 @@ $(document).ready(function (e) {
     });//scroll
 
 
-        $('nav').on('click', 'a', function (e) {
+        $('nav, .header_div ').on('click', 'a', function (e) {
             e.preventDefault();
             var href = $(this).attr('href');
             console.log(href);
@@ -31,6 +31,19 @@ $(document).ready(function (e) {
                 scrollTop:$(href).offset().top
             }, 500);
         });//click
+
+
+    $(window).on('mousemove', function (e) {
+        var top = (e.pageY - ($('.about').offset().top + $('.about').height() / 2));
+        var left = (e.pageX - ($('.about').offset().left + $('.about').width() / 2));
+        $('.img_1').css({
+            'transform': 'translate(' + left / 400 + 'px,' + top / 400 + 'px)'
+        });
+        $('.img_2').css({
+            'transform': 'translate(' + -left / 400 + 'px,' + -top / 400 + 'px)'
+        });
+
+    });//mousemove
 
 
     /*$('input[type="checkbox"]').on('click', function (e) {
