@@ -28,7 +28,7 @@ $(document).ready(function (e) {
             console.log(href);
 
             $('body, html').animate({
-                scrollTop:$(href).offset().top
+                scrollTop:$(href).offset().top-55
             }, 500);
         });//click
 
