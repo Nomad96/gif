@@ -30,9 +30,89 @@ a {
   }
 }
 
+body{
+  font-family: avenir-book, sans-serif;
+}
+
 html {
   //scroll-behavior: smooth;
 }
+
+.socials{
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0  6px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 0px 0  6px rgba(0, 0, 0, 0.49);
+  box-shadow: 0px 0  6px rgba(0, 0, 0, 0.49);
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 66;
+  background: url("../img/share.png") no-repeat;
+  -webkit-background-size: 30px;
+  background-size: 30px;
+  background-position: center center;
+  background-color: #fff;
+  cursor: pointer;
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0  6px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 0px 0  6px rgba(0, 0, 0, 0.49);
+    box-shadow: 0px 0  6px rgba(0, 0, 0, 0.49);
+    position: absolute;
+    background-color: #fff;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    transition: 0.3s all;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    img{
+      width: 20px;
+    }
+    @for $i from 1 through 3 {
+      &:nth-of-type(#{$i}){
+        -webkit-transition-delay: #{$i*5}0ms;
+        -moz-transition-delay: #{$i*5}0ms;
+        -ms-transition-delay: #{$i*5}0ms;
+        -o-transition-delay: #{$i*5}0ms;
+        transition-delay: #{$i*5}0ms;
+      }
+    }
+  }
+  &.active{
+    a{
+      opacity: 1;
+      visibility: visible;
+      &:first-of-type{
+        left: -80px;
+        top: 0;
+      }
+      &:nth-of-type(2){
+        left: -60px;
+        top: -60px;
+      }
+      &:last-of-type{
+        left: 0;
+        top: -80px;
+      }
+    }
+  }
+}
+
 
 #map {
   margin-top: 130px;
@@ -116,7 +196,7 @@ nav {
         position: relative;
         color: $black;
         font-weight: 600;
-        font-family: avenir-book;
+        font-family: avenir-book,sans-serif;
         &::after {
           content: '';
           width: 100%;
@@ -204,7 +284,7 @@ nav {
     z-index: 5;
     h1 {
       text-transform: uppercase;
-      font-family: times;
+      font-family: times, sans-serif;
       font-size: 87px;
       color: $white;
     }
@@ -212,7 +292,7 @@ nav {
       font-size: 18px;
       line-height: 28px;
       color: $white;
-      font-family: avenir-book;
+      font-family: avenir-book, sans-serif;
 
     }
 
@@ -223,7 +303,7 @@ nav {
       border: 2px solid $pink;
       color: $white;
       font-weight: bold;
-      font-family: avenir-book;
+      font-family: avenir-book, sans-serif;
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       border-radius: 4px;
@@ -300,7 +380,7 @@ nav {
   h2 {
     text-transform: uppercase;
     font-size: 46px;
-    font-family: Times;
+    font-family: Times, sans-serif;
     position: relative;
     padding-bottom: 20px;
     margin-bottom: 40px;
@@ -321,7 +401,7 @@ nav {
   }
   h3 {
     font-size: 18px;
-    font-family: avenir-book;
+    font-family: avenir-book, sans-serif;
     color: #9b9b9b;
 
     margin-bottom: 80px;
@@ -426,7 +506,7 @@ nav {
       //background-color: rgba(0,0,0,0.8);
       z-index: 10;
       p {
-        font-family: avenir-book;
+        font-family: avenir-book, sans-serif;
         &:first-of-type {
           font-size: 18px;
           font-weight: bold;
@@ -690,7 +770,7 @@ nav {
     font-weight: bold;
     color: $lightGrey;
     line-height: 26px;
-    font-family: avenir-book;
+    font-family: avenir-book, sans-serif;
   }
   .work_time,
   .address {

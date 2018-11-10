@@ -16,7 +16,9 @@
 </head>
 <body>
 <div class="socials">
-
+    <a target="_blank" href="#"><img src="img/social/facebook.png" alt=""></a>
+    <a target="_blank" href="#"><img src="img/social/twitter.png" alt=""></a>
+    <a target="_blank" href="#"><img src="img/social/instagram.png" alt=""></a>
 </div>
 <!-- nav -->
 <nav>
@@ -244,7 +246,7 @@
                     elit. Accusamus deserunt eius fugit hic nostrum obcaecati sequi similique, sit vero voluptatibus.
                 </h4>
                 <div class="row mt-5 text-center text-lg-left">
-                    <div class="col-xl-4 col-lg-6 text-xl-left text-center">
+                    <div class="col-xl-5 col-lg-6 text-xl-left text-center">
                         <div class="work_time">
                             <p><i class="fa fa-clock-o" aria-hidden="true"></i></p>
                             <p>Opening Hours</p>
@@ -253,7 +255,7 @@
                             <p><b>Sunday</b>: Closed</p>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 text-xl-left text-center">
+                    <div class="col-xl-5 col-lg-6 text-xl-left text-center">
                         <div class="address">
                             <p><i class="fa fa-map-marker" aria-hidden="true"></i></p>
                             <p>Our Location</p>
@@ -352,6 +354,11 @@
             $('ul.menu').slideToggle();
         })
 
+        
+            $('.socials').on('click', function (e) {
+                // e.preventDefault()
+                $(this).toggleClass('active');
+            });//click
 
         // var swiper = new Swiper('.swiper-container');
     });//ready

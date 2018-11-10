@@ -17,6 +17,84 @@ a {
     text-decoration: none;
     color: inherit; }
 
+body {
+  font-family: avenir-book, sans-serif; }
+
+.socials {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0 6px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 0px 0 6px rgba(0, 0, 0, 0.49);
+  box-shadow: 0px 0 6px rgba(0, 0, 0, 0.49);
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 66;
+  background: url("../img/share.png") no-repeat;
+  -webkit-background-size: 30px;
+  background-size: 30px;
+  background-position: center center;
+  background-color: #fff;
+  cursor: pointer; }
+  .socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0 6px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 0px 0 6px rgba(0, 0, 0, 0.49);
+    box-shadow: 0px 0 6px rgba(0, 0, 0, 0.49);
+    position: absolute;
+    background-color: #fff;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    transition: 0.3s all;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    top: 0; }
+    .socials a img {
+      width: 20px; }
+    .socials a:nth-of-type(1) {
+      -webkit-transition-delay: 50ms;
+      -moz-transition-delay: 50ms;
+      -ms-transition-delay: 50ms;
+      -o-transition-delay: 50ms;
+      transition-delay: 50ms; }
+    .socials a:nth-of-type(2) {
+      -webkit-transition-delay: 100ms;
+      -moz-transition-delay: 100ms;
+      -ms-transition-delay: 100ms;
+      -o-transition-delay: 100ms;
+      transition-delay: 100ms; }
+    .socials a:nth-of-type(3) {
+      -webkit-transition-delay: 150ms;
+      -moz-transition-delay: 150ms;
+      -ms-transition-delay: 150ms;
+      -o-transition-delay: 150ms;
+      transition-delay: 150ms; }
+  .socials.active a {
+    opacity: 1;
+    visibility: visible; }
+    .socials.active a:first-of-type {
+      left: -80px;
+      top: 0; }
+    .socials.active a:nth-of-type(2) {
+      left: -60px;
+      top: -60px; }
+    .socials.active a:last-of-type {
+      left: 0;
+      top: -80px; }
+
 #map {
   margin-top: 130px;
   width: 100%;
@@ -88,7 +166,7 @@ nav {
         position: relative;
         color: #333;
         font-weight: 600;
-        font-family: avenir-book; }
+        font-family: avenir-book,sans-serif; }
         nav ul.menu li a::after {
           content: '';
           width: 100%;
@@ -156,14 +234,14 @@ nav {
     z-index: 5; }
     .header .header_div h1 {
       text-transform: uppercase;
-      font-family: times;
+      font-family: times, sans-serif;
       font-size: 87px;
       color: #ffffff; }
     .header .header_div h3 {
       font-size: 18px;
       line-height: 28px;
       color: #ffffff;
-      font-family: avenir-book; }
+      font-family: avenir-book, sans-serif; }
     .header .header_div a {
       display: inline-block;
       padding: 10px 30px;
@@ -171,7 +249,7 @@ nav {
       border: 2px solid #c8a4a8;
       color: #ffffff;
       font-weight: bold;
-      font-family: avenir-book;
+      font-family: avenir-book, sans-serif;
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       border-radius: 4px;
@@ -232,7 +310,7 @@ nav {
   .section h2 {
     text-transform: uppercase;
     font-size: 46px;
-    font-family: Times;
+    font-family: Times, sans-serif;
     position: relative;
     padding-bottom: 20px;
     margin-bottom: 40px; }
@@ -251,7 +329,7 @@ nav {
       transform: translateX(-50%); }
   .section h3 {
     font-size: 18px;
-    font-family: avenir-book;
+    font-family: avenir-book, sans-serif;
     color: #9b9b9b;
     margin-bottom: 80px; }
   @media screen and (max-width: 991px) {
@@ -345,7 +423,7 @@ nav {
       transition: 0.3s all;
       z-index: 10; }
       .team .boxes .overlay p {
-        font-family: avenir-book; }
+        font-family: avenir-book, sans-serif; }
         .team .boxes .overlay p:first-of-type {
           font-size: 18px;
           font-weight: bold;
@@ -549,7 +627,7 @@ nav {
     font-weight: bold;
     color: #9b9b9b;
     line-height: 26px;
-    font-family: avenir-book; }
+    font-family: avenir-book, sans-serif; }
   .about.section .work_time p,
   .about.section .address p {
     line-height: 28px;
