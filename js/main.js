@@ -28,8 +28,11 @@ $(document).ready(function (e) {
             console.log(href);
 
             $('body, html').animate({
-                scrollTop:$(href).offset().top-55
+                scrollTop:$(href).offset().top
             }, 500);
+            if($(window).width()<991){
+                $('ul.menu').slideUp();
+            }
         });//click
 
 
@@ -46,28 +49,72 @@ $(document).ready(function (e) {
     });//mousemove
 
 
-    /*$('input[type="checkbox"]').on('click', function (e) {
+    function initMap() {
+        // The location of Uluru
+        var uluru = {lat: 40.206192, lng: 44.521373};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 18,
+                scrollwheel: false,
+                center: uluru
+            });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({
+            position: uluru,
+            animation:google.maps.Animation.BOUNCE,
+            map: map});
+    }
 
+    initMap()
 
-        var all = $('input[type="checkbox"]').length, falses = 0;
-
-        $.each($('input[type="checkbox"]'), function (key, val) {
-
-                console.log(key, val.name)
-
-            if(val.checked == false){
-                falses ++;
-                $('div[data-category="'+ val.name +'"]').css({display:"none"})
-            }else {
-                $('div[data-category="'+ val.name +'"]').css({display:"block"})
-            }
-
-        }) ;
-
-        if(all == falses){
-            $('.work').css({display:"block"})
-        }
+    /*new fullpage('#fullpage', {
+        //options here
+        autoScrolling: true,
+        scrollHorizontally: true
     });*/
+
+    var k;
+    if ($(document).width() < 991) {
+        k = 1;
+    } else {
+        k = 3
+    }
+
+    $('.service-slick').slick({
+        slidesToShow: k,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: true,
+        arrows: true
+    });
+
+    var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {
+            delay: 9000
+        },
+        effect: 'fade'
+
+    })
+
+
+    $('div.button').on('click', function (e) {
+        e.preventDefault();
+        $('ul.menu').slideToggle();
+    })
+
+
+    $('.socials').on('click', function (e) {
+        // e.preventDefault()
+        $(this).toggleClass('active');
+    });//click
+
+    // var swiper = new Swiper('.swiper-container');
+
 
 
 });//ready
