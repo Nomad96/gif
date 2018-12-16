@@ -347,7 +347,7 @@ nav {
     position: absolute;
     content: '';
     z-index: 3;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(50, 50, 50, 0.55);
     //background-image: linear-gradient(to left, #13abdb, #B10DC9, orange, #28d6e4, #04f44f);
   }
   @media screen and (max-width: 991px) {
@@ -477,11 +477,11 @@ nav {
       object-fit: cover;
       margin: 0 auto;
       display: block;
-      -webkit-transition: 10s transform, 0.3s filter;
-      -moz-transition: 10s transform, 0.3s filter;
-      -ms-transition: 10s transform, 0.3s filter;
-      -o-transition: 10s transform, 0.3s filter;
-      transition: 10s transform, 0.3s filter;
+      -webkit-transition: 1s transform, 0.3s filter;
+      -moz-transition: 1s transform, 0.3s filter;
+      -ms-transition: 1s transform, 0.3s filter;
+      -o-transition: 1s transform, 0.3s filter;
+      transition: 1s transform, 0.3s filter;
     }
     .overlay {
       display: block;
@@ -536,11 +536,11 @@ nav {
       }
       img {
         filter: brightness(30%);
-        -webkit-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        -o-transform: scale(1.2);
-        transform: scale(1.2);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
       }
       .overlay {
         visibility: visible;
