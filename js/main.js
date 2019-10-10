@@ -73,6 +73,7 @@ $(document).ready(function (e) {
         center: [40.206082, 44.521926],
         zoom: 18,
         trackResize: true,
+        dragging: false
     });
 
     let icon = L.icon({

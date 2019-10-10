@@ -101,7 +101,8 @@ body {
   height: 500px; }
   @media screen and (max-width: 1200px) {
     #map {
-      margin-top: 30px; } }
+      margin-top: 30px;
+      height: 300px; } }
 
 .swiper-container .swiper-slide {
   height: 100%;
