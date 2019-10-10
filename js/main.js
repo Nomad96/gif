@@ -23,7 +23,7 @@ $(document).ready(function (e) {
 
 
     $('nav, .header_div ').on('click', 'a', function (e) {
-        e.preventDefault();
+        // e.preventDefault();
         var href = $(this).attr('href');
         console.log(href);
 
